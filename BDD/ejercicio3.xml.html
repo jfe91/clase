@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>ejercicio3.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #d5b778;}
+.s1 { color: #bcbec4;}
+.s2 { color: #6aab73;}
+.s3 { color: #bcbec4;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+ejercicio3.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s2">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s2">=&quot;UTF-8&quot;</span><span class="s0">?&gt;</span>
+<span class="s0">&lt;!DOCTYPE </span><span class="s1">geografia </span><span class="s3">[ 
+        &lt;!ELEMENT geografia (paises, ciudades)&gt; 
+        &lt;!ELEMENT paises (pais)*&gt; 
+        &lt;!ELEMENT pais (#PCDATA)&gt; 
+        &lt;!ATTLIST pais codpais ID #REQUIRED&gt; 
+        &lt;!ELEMENT ciudades (ciudad)*&gt; 
+        &lt;!ELEMENT ciudad (#PCDATA)&gt; 
+        &lt;!ATTLIST ciudad pais IDREF #IMPLIED&gt; 
+        ]</span><span class="s0">&gt;</span>
+<span class="s0">&lt;geografia&gt;</span>
+    <span class="s0">&lt;paises&gt;</span>
+        <span class="s0">&lt;pais </span><span class="s1">codpais</span><span class="s2">=&quot;Arg&quot;</span><span class="s0">&gt;</span><span class="s3">Argentina</span><span class="s0">&lt;/pais&gt;</span>
+        <span class="s0">&lt;pais </span><span class="s1">codpais</span><span class="s2">=&quot;Aus&quot;</span><span class="s0">&gt;</span><span class="s3">Austria</span><span class="s0">&lt;/pais&gt;</span>
+        <span class="s0">&lt;pais </span><span class="s1">codpais</span><span class="s2">=&quot;Jap&quot;</span><span class="s0">&gt;</span><span class="s3">Japón</span><span class="s0">&lt;/pais&gt;</span>
+        <span class="s0">&lt;pais </span><span class="s1">codpais</span><span class="s2">=&quot;Nor&quot;</span><span class="s0">&gt;</span><span class="s3">Noruega</span><span class="s0">&lt;/pais&gt;</span>
+    <span class="s0">&lt;/paises&gt;</span>
+    <span class="s0">&lt;ciudades&gt;</span>
+        <span class="s0">&lt;ciudad </span><span class="s1">pais</span><span class="s2">=&quot;Jap&quot;</span><span class="s0">&gt;</span><span class="s3">Osaka</span><span class="s0">&lt;/ciudad&gt;</span>
+        <span class="s0">&lt;ciudad&gt;</span><span class="s3">Oslo</span><span class="s0">&lt;/ciudad&gt;</span>
+        <span class="s0">&lt;ciudad </span><span class="s1">pais</span><span class="s2">=&quot;Jap&quot;</span><span class="s0">&gt;</span><span class="s3">Tokio</span><span class="s0">&lt;/ciudad&gt;</span>
+        <span class="s0">&lt;ciudad </span><span class="s1">pais</span><span class="s2">=&quot;Aus&quot;</span><span class="s0">&gt;</span><span class="s3">Viena</span><span class="s0">&lt;/ciudad&gt;</span>
+    <span class="s0">&lt;/ciudades&gt;</span>
+<span class="s0">&lt;/geografia&gt;</span></pre>
+</body>
+</html>
